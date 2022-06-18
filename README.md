@@ -14,3 +14,6 @@ What is parallax scrolling?
    mediums, fostering a realistic effect. Its first use was in traditional
    animation, dating back to as early as Disney’s Snow White and the Seven
    Dwarfs, and in video games such as Super Mario.
+
+
+Here is the working model of the website : https://parallaxonia.netlify.app/
