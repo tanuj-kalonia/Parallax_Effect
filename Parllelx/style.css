@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  outline: none;
+  font-size: 62.5%;
+}
+body {
+  background: linear-gradient(#2b1055, #7597de);
+  height: 100%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4rem 8rem;
+  z-index: 10000;
+}
+.navbar .logo {
+  color: #fff;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.navbar .nav-items {
+  display: flex;
+  list-style: none;
+}
+.navbar .nav-items .item a {
+  color: white;
+  margin-left: 3rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  transition: 0.15s ease-in;
+  border-radius: 3rem;
+}
+.navbar .nav-items .item .active {
+  background: #fff;
+  border-radius: 3rem;
+  color: #2b1055;
+}
+.navbar .nav-items .item a:hover {
+  background: #fff;
+  color: #2b1055;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid red; */
+}
+.main::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 10rem;
+  background: linear-gradient(to top, #1c0522, transparent);
+  z-index: 1000;
+}
+
+.main img {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  /* height: 100%; */
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.main #mountains_front {
+  z-index: 100;
+}
+.main #moon {
+  mix-blend-mode: screen;
+}
+#text {
+  position: absolute;
+  right: 0;
+  font-size: 6rem;
+  color: #fff;
+  white-space: nowrap;
+  z-index: 10;
+}
+.main .btn {
+  /* border: 2px solid red; */
+  font-weight: 300;
+  position: absolute;
+  display: inline-block;
+  background: #fff;
+  border-radius: 3rem;
+  font-size: 2rem;
+  z-index: 10;
+  padding: 0.4rem 1rem;
+  transform: translateY(10rem);
+}
+.main .btn {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.sec {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 8rem;
+  overflow: hidden;
+  background: #1c0522;
+}
+.sec h1 {
+  font-size: 4rem;
+  color: #fff;
+  text-align: center;
+}
+.sec p {
+  text-transform: none;
+  color: aliceblue;
+  display: block;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  white-space: norma;
+  margin-right: 1rem;
+}
